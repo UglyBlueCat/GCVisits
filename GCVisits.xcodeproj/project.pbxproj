@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		9947FE331E6C41230056AE75 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9947FE321E6C41230056AE75 /* NetworkManager.swift */; };
+		9947FE371E6C42410056AE75 /* Globals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9947FE361E6C42410056AE75 /* Globals.swift */; };
+		9947FE391E6C45B70056AE75 /* API_Interface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9947FE381E6C45B70056AE75 /* API_Interface.swift */; };
+		9947FE3B1E6C46FF0056AE75 /* DataHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9947FE3A1E6C46FF0056AE75 /* DataHandler.swift */; };
 		995979171E6C28C000D21581 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 995979161E6C28C000D21581 /* AppDelegate.swift */; };
 		995979191E6C28C000D21581 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 995979181E6C28C000D21581 /* ViewController.swift */; };
 		9959791C1E6C28C000D21581 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9959791A1E6C28C000D21581 /* Main.storyboard */; };
@@ -17,6 +20,9 @@
 
 /* Begin PBXFileReference section */
 		9947FE321E6C41230056AE75 /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		9947FE361E6C42410056AE75 /* Globals.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Globals.swift; sourceTree = "<group>"; };
+		9947FE381E6C45B70056AE75 /* API_Interface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API_Interface.swift; sourceTree = "<group>"; };
+		9947FE3A1E6C46FF0056AE75 /* DataHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataHandler.swift; sourceTree = "<group>"; };
 		995979131E6C28C000D21581 /* GCVisits.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GCVisits.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		995979161E6C28C000D21581 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		995979181E6C28C000D21581 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -42,6 +48,8 @@
 			children = (
 				995979161E6C28C000D21581 /* AppDelegate.swift */,
 				9947FE321E6C41230056AE75 /* NetworkManager.swift */,
+				9947FE381E6C45B70056AE75 /* API_Interface.swift */,
+				9947FE3A1E6C46FF0056AE75 /* DataHandler.swift */,
 			);
 			name = Core;
 			sourceTree = "<group>";
@@ -85,6 +93,7 @@
 			children = (
 				9959791D1E6C28C000D21581 /* Assets.xcassets */,
 				995979221E6C28C000D21581 /* Info.plist */,
+				9947FE361E6C42410056AE75 /* Globals.swift */,
 			);
 			name = Resource;
 			sourceTree = "<group>";
@@ -188,8 +197,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9947FE371E6C42410056AE75 /* Globals.swift in Sources */,
 				9947FE331E6C41230056AE75 /* NetworkManager.swift in Sources */,
 				995979191E6C28C000D21581 /* ViewController.swift in Sources */,
+				9947FE391E6C45B70056AE75 /* API_Interface.swift in Sources */,
+				9947FE3B1E6C46FF0056AE75 /* DataHandler.swift in Sources */,
 				995979171E6C28C000D21581 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -315,6 +327,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = F37NX2W83F;
 				INFOPLIST_FILE = GCVisits/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.uglybluecat.GCVisits;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -328,6 +341,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = F37NX2W83F;
 				INFOPLIST_FILE = GCVisits/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.uglybluecat.GCVisits;
 				PRODUCT_NAME = "$(TARGET_NAME)";
