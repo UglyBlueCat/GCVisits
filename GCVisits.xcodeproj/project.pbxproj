@@ -17,6 +17,7 @@
 		9959791E1E6C28C000D21581 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9959791D1E6C28C000D21581 /* Assets.xcassets */; };
 		995979211E6C28C000D21581 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9959791F1E6C28C000D21581 /* LaunchScreen.storyboard */; };
 		99D0E5E21E702E4C00598D81 /* SQLite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99D0E5E11E702E4C00598D81 /* SQLite.framework */; };
+		99E30D7E1E701B830003C564 /* DB_Interface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99E30D7D1E701B830003C564 /* DB_Interface.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		995979201E6C28C000D21581 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		995979221E6C28C000D21581 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		99D0E5E11E702E4C00598D81 /* SQLite.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SQLite.framework; path = Carthage/Build/iOS/SQLite.framework; sourceTree = "<group>"; };
+		99E30D7D1E701B830003C564 /* DB_Interface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DB_Interface.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 				9947FE321E6C41230056AE75 /* NetworkManager.swift */,
 				9947FE381E6C45B70056AE75 /* API_Interface.swift */,
 				9947FE3A1E6C46FF0056AE75 /* DataHandler.swift */,
+				99E30D7D1E701B830003C564 /* DB_Interface.swift */,
 			);
 			name = Core;
 			sourceTree = "<group>";
@@ -221,6 +224,7 @@
 			files = (
 				9947FE371E6C42410056AE75 /* Globals.swift in Sources */,
 				9947FE331E6C41230056AE75 /* NetworkManager.swift in Sources */,
+				99E30D7E1E701B830003C564 /* DB_Interface.swift in Sources */,
 				995979191E6C28C000D21581 /* ViewController.swift in Sources */,
 				9947FE391E6C45B70056AE75 /* API_Interface.swift in Sources */,
 				9947FE3B1E6C46FF0056AE75 /* DataHandler.swift in Sources */,

@@ -11,10 +11,9 @@ import Foundation
 class NetworkManager {
     
     let defaultSession : URLSession
-    var testVariable : Int // something to test against
     
     /*
-     * Create a shared instance to initialise class as a singleton
+     * Create a shared instance to initialise class as a singleton so there's only one URLSession
      * originally taken from: http://krakendev.io/blog/the-right-way-to-write-a-singleton
      */
     static let sharedInstance = NetworkManager()
@@ -24,8 +23,6 @@ class NetworkManager {
         configuration.timeoutIntervalForRequest = 300.0
         
         self.defaultSession = URLSession(configuration: configuration)
-        
-        self.testVariable = 0
     }
     
     /**

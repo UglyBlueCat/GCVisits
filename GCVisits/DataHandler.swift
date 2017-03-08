@@ -55,11 +55,11 @@ class DataHandler {
     func storeVisits (visitArray : NSArray) {
         for i in 0..<visitArray.count {
             if let visit = visitArray[i] as? NSDictionary {
-                if let siteId = visit["siteId"] as? String,
+                if let visitNumber = visit["visitNumber"] as? Int,
+                    let siteId = visit["siteId"] as? String,
                     let client = visit["client"] as? String,
-                    let site = visit["site"] as? String,
-                    let visitNumber = visit["visitNumber"] as? Int {
-                    DLog("visitNumber: \(visitNumber) siteId: \(siteId) client: \(client) site: \(site)")
+                    let site = visit["site"] as? String {
+                    DB_Interface.sharedInstance.addVisit(theVisitNumber: visitNumber, theSiteId: siteId, theClient: client, theSite: site)
                 } else {
                     DLog("Cannot extract data fields from visitArray[\(i)]")
                 }
