@@ -18,6 +18,7 @@
 		995979211E6C28C000D21581 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9959791F1E6C28C000D21581 /* LaunchScreen.storyboard */; };
 		99D0E5E21E702E4C00598D81 /* SQLite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99D0E5E11E702E4C00598D81 /* SQLite.framework */; };
 		99E30D7E1E701B830003C564 /* DB_Interface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99E30D7D1E701B830003C564 /* DB_Interface.swift */; };
+		99E6A2141E70894100BD9293 /* GCVisitCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99E6A2131E70894100BD9293 /* GCVisitCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		995979221E6C28C000D21581 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		99D0E5E11E702E4C00598D81 /* SQLite.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SQLite.framework; path = Carthage/Build/iOS/SQLite.framework; sourceTree = "<group>"; };
 		99E30D7D1E701B830003C564 /* DB_Interface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DB_Interface.swift; sourceTree = "<group>"; };
+		99E6A2131E70894100BD9293 /* GCVisitCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GCVisitCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				9947FE311E6C40CD0056AE75 /* Resource */,
 				9947FE2E1E6C403C0056AE75 /* Storyboards */,
 				9947FE2D1E6C40300056AE75 /* View Controllers */,
+				99E6A2121E70891300BD9293 /* Cells */,
 			);
 			name = UI;
 			sourceTree = "<group>";
@@ -129,6 +132,14 @@
 				99D0E5E11E702E4C00598D81 /* SQLite.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		99E6A2121E70891300BD9293 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				99E6A2131E70894100BD9293 /* GCVisitCell.swift */,
+			);
+			name = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -227,6 +238,7 @@
 				99E30D7E1E701B830003C564 /* DB_Interface.swift in Sources */,
 				995979191E6C28C000D21581 /* ViewController.swift in Sources */,
 				9947FE391E6C45B70056AE75 /* API_Interface.swift in Sources */,
+				99E6A2141E70894100BD9293 /* GCVisitCell.swift in Sources */,
 				9947FE3B1E6C46FF0056AE75 /* DataHandler.swift in Sources */,
 				995979171E6C28C000D21581 /* AppDelegate.swift in Sources */,
 			);

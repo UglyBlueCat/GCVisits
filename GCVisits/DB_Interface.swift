@@ -76,11 +76,10 @@ class DB_Interface {
         let allVisits : NSMutableArray = NSMutableArray()
         do {
             for visit in try database.prepare(visits) {
-                DLog("visitNumber: \(visit[visitNumber]), siteId: \(visit[siteId]), client: \(visit[client]), site: \(visit[site])")
-                let visitDictionary : NSDictionary = [visitNumber:visit[visitNumber],
-                                                      siteId:visit[siteId],
-                                                      client:visit[client],
-                                                      site:visit[site]]
+                let visitDictionary : NSDictionary = ["visitNumber":visit[visitNumber],
+                                                      "siteId":visit[siteId],
+                                                      "client":visit[client],
+                                                      "site":visit[site]]
                 allVisits.add(visitDictionary)
             }
         } catch {

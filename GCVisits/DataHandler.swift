@@ -67,5 +67,6 @@ class DataHandler {
                 DLog("Cannot convert visitArray[\(i)]")
             }
         }
+        NotificationCenter.default.post(name: Notification.Name(rawValue: "kDataLoaded"), object: nil)
     }
 }
