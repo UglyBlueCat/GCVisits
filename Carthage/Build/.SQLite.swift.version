@@ -1,0 +1,10 @@
+{
+  "xcodeVersion" : "Xcode 8.2.1\nBuild version 8C1002",
+  "commitish" : "0.11.2",
+  "iOS" : [
+    {
+      "name" : "SQLite",
+      "md5" : "d70ceb42b583a9e0c531c50ef4515670"
+    }
+  ]
+}
